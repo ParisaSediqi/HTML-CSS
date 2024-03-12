@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Cinema Town" content="Watch free movies online with Plex and get help finding movies to watch anytime on any device. It's never been easier to stream movies so get started.">
+    <link rel="shortcut icon" href="images/icon.PNG">
+    <title> Cinema Town</title>
+    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .search-bar{
+            border-radius: 5cm;
+            width:100%;
+            max-width: 600px;
+            background: rgb(41, 56, 45);
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            backdrop-filter: blur(4px) saturate(180%);
+            margin-left: 25%;
+            margin-top: 3%;
+            border-radius: 5cm;
+
+        }
+        .search-bar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: #6cac6f;
+    
+        }
+        ::placeholder{
+            color: #6cac6f;
+        }
+        .search-bar button i{
+            width: 25px;
+        }
+        .search-bar button{
+            border: 0;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background: #6cac6f;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="movies.html"><i class="fa fa-film" aria-hidden="true"></i>Movies</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section id="Outstandingmovie">
+            <h2>Outstanding Movie</h2>
+            <img class="outimg" src="images/dune2.webp" alt="Movie 1 Poster" width="96%" height="600">
+            <p>“Dune” unfolds across the desert planet of Arrakis, the sole source of the universe's <br> most valuable substance, the spice Melange. Through the eyes of Paul Atreides, we witness a tangled <br> plot of betrayal and rebellion, where political intrigue and ecological dynamics interplay with destiny <br> and individual agency</p>
+            </section>
+            <div>
+                <form action="movies.html" method="get" class="search-bar">
+                    <input type="text" placeholder="Search for Movies" name="search">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                
+            </div>
+        
+            <section class="filmposters">
+                <div class="container">
+                    <div class="filmposter">
+                        <div class="imgbox">
+                            <a href="moviedetails.html">
+                                <img src="images/artemisfowl.jpeg" alt="artemisfowl film poster" >
+                                <div class="hovericon">
+                                    <i id="posticon" class="fa fa-play-circle" aria-hidden="true" ></i>
+                                </div>
+                            <h2>Artemis Fowl</h2>
+                                </a>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="filmposter">
+                        <div class="imgbox">
+                            <a href="moviedetails.html">
+                                <img src="images/elemental.jpeg" alt="Elemental film poster" >
+                                <div class="hovericon">
+                                    <i id="posticon" class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                            <h2>Elemental</h2>
+                                </a>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="filmposter">
+                        <div class="imgbox">
+                            <a href="moviedetails.html">
+                                <img src="images/avatar.jpeg" alt="Avatar poster" >
+                                <div class="hovericon">
+                                    <i id="posticon" class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                            <h2>Avatar</h2>
+                                </a>
+                                
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+            <p> &copy; 2024 Cinema Town</p>
+    </footer>
+            
+</body>
+</html>
